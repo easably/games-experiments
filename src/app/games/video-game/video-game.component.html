@@ -1,3 +1,9 @@
-<p>
-  video-game works!
-</p>
+<div>
+  <video width="400px" [currentTime]="currentTime">
+    <source src="assets/car.mp4" type="video/mp4" />
+  </video>
+  <button (click)="decrease()">Incorrect</button>
+  <button (click)="increase()">Correct</button>
+  <p>Letter Count : </p><input [(ngModel)]="wordLength" />
+  <p>{{'currentTime = ' + currentTime}}</p>
+</div>
